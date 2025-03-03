@@ -10,7 +10,7 @@ public class RangeOneToTenMiddleware
 
     public async Task Invoke(HttpContext context)
     {
-        string? value = context.Request.Query["number"];
+        string? value = context.Request.Query["number"]; 
         try
         {
             int number = Math.Abs(Convert.ToInt32(value));
